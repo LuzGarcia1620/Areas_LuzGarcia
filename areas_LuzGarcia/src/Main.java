@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 //Desarrollar un Programa con un menú interactivo que permita calcular el área de 4
 //figuras, el usuario selecciona la figura mediante opciones del 1 al 4, ingresará los valores (base, altura, radio, etc.). El programa mostrará el resultado del cálculo.
 public class Main {
@@ -7,16 +6,15 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         boolean a = true;
         while (a) {
-            System.out.println("Bienvenido al sistema ");
+            System.out.println("**************************");
+            System.out.println("BIENVENIDO AL SISTEMA DE CALCULO DE AREA");
             System.out.println("Ingrese el numero deseado:\n1.Calcular el area del cuadrado \n2. Calcular el area del triangulo \n3.Calcular el area del Rectangulo \n4.Calcular el area del circulo \n5.salir ");
             int opcion = sc.nextInt();
             switch (opcion) {
                 case 1:
-                    System.out.println("ingrese base: ");
-                    int base = sc.nextInt();
-                    System.out.println("Ingrese la altura: ");
-                    int altura= sc.nextInt();
-                    System.out.println("El area del cuadrado es: " + base*altura);
+                    System.out.println("ingrese el lado del cuadrado: ");
+                    int lado = sc.nextInt();
+                    System.out.println("El area del cuadrado es: " + lado*lado );
                     System.out.println("*********************************");
                     break;
                 case 2:
